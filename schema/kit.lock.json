@@ -1,0 +1,13 @@
+{
+    "kit":  "repo-kit",
+    "version":  "2.9.0",
+    "spec_version":  "2.1.4",
+    "profile":  "link-only",
+    "installed":  "2026-11-18",
+    "files":  {
+                  "tools/repo-kit/check_repo.py":  "sha256:0b26c76ff3dd19164a850aefe78ce757d8105689b03a25da54459ecd558bcf34",
+                  "schema/frontmatter.schema.json":  "sha256:3c94c9da7d862aea3a2d6719a3325eb984aceaba615c2917c2d1d2eb66c9fb51",
+                  "schema/skills.schema.json":  "sha256:7a06b5bfaa5ea3caa2999bf60e3a6d45378cac0262b8fbd05aec1efd6a22deb7",
+                  "tools/update-repo-kit.ps1":  "sha256:84951d2d4946df185a45c142d5f5e2aef40c1e197c42d4f234c2e5827adb13b2"
+              }
+}

@@ -1,6 +1,7 @@
 # AGENTS.md · 项目规则
 
 > 给 AI / 未来的你：只记文档里看不出的关键信息。
+> 📌 **文档基线**：2026-11-18（commit `__SHA__`）接入 repo-kit 机器层（link-only / 规范 2.1.4）
 
 ## 项目是什么
 
@@ -18,4 +19,12 @@ VMware Workstation 虚拟机安装 Windows 图文教程（交互式 HTML 幻灯�
 ## 文档
 
 - [README.md](README.md)：内容概要 + 文件说明
+- [DEVELOPMENT.md](DEVELOPMENT.md)：长卷幻灯片架构、断网/内存/截图体积三个坑
 - 文件：`index.html`（交互式教程）+ `images/`（30 张截图）
+
+## 机器层（repo-kit · link-only）
+
+- `schema/taxonomy.json` + `schema/kit.lock.json`（kit `2.9.0` / 规范 `2.1.4` / `link-only`）+ `tools/repo-kit/check_repo.py`
+- 校验：`python tools/repo-kit/check_repo.py --root .`；锁哈希：`pwsh tools/update-repo-kit.ps1 -Check`
+- 只查**链接与锚点**：全仓 md 豁免 frontmatter（本仓没有 frontmatter 契约）
+- `schema/kit.lock.json` **不要手改**，升级只能跑 `tools/update-repo-kit.ps1`
